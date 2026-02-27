@@ -19,7 +19,7 @@ mongoose.connect(DB_URL)
 .catch((err) => console.log("MongoDB error", err))
 
 app.use(cors({
-    origin : ["http://localhost:5173", "http://localhost:5174"],
+    origin : ["https://frontendadminblogapp.netlify.app", "https://frontendpublicblogapp.netlify.app"],
     methods : ["GET", "POST", "PUT", "DELETE"],
     credentials : true
 }));
